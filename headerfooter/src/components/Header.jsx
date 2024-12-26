@@ -15,7 +15,7 @@ const Header = () => {
       <div className={`w-full bg-[#58A42A]`}>
         <ul className={`items-center flex text-white w-full`}>
           <li className={`ms-14 md:ms-10`}>
-            <p className={`text-white text-xs py-2`}>
+            <p className={`text-white text-xs py-2 flex`}>
               <i className="fa-solid fa-phone text-xs me-2"></i>
               OUR PHONE NUMBER: +91 90281 44481
             </p>
