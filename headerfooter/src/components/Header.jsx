@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <>
-      <div className={`w-full bg-[#58A42A] h-10`}>
+      <div className={`w-full bg-[#58A42A]`}>
         <ul className={`items-center flex text-white w-full`}>
           <li className={`ms-14 md:ms-10`}>
             <p className={`text-white text-xs py-2`}>
@@ -38,7 +38,7 @@ const Header = () => {
         </ul>
       </div>
       <div className={`px-14`} onClick={() => open && setOpen(false)}>
-        <div className="flex justify-center">
+        <div className="flex justify-center md:hidden">
           <img
             src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
             alt="logo"
@@ -60,8 +60,17 @@ const Header = () => {
           <li className={commonNavBarClasses}>SHOP</li>
           <li className={commonNavBarClasses}>BLOGS</li>
           <li className={commonNavBarClasses}>CONTACT US</li>
+          <li>
+            <div className="md:flex md:justify-center md:ms-28 hidden">
+              <img
+                src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
+                alt="logo"
+                className="size-12 md:size-16"
+              />
+            </div>
+          </li>
           <li
-            className={`ms-[0%] md:ms-[40%] after:content-[''] after:block after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full`}
+            className={`ms-[0%] md:ms-64  after:content-[''] after:block after:h-[1px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:after:w-full`}
           >
             <a href={`#`} className={`md:italic md:font-thin`}>
               Login / Register
