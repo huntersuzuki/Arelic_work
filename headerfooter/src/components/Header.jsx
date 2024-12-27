@@ -5,7 +5,7 @@ import { FaSquarePhone } from "react-icons/fa6";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const commonNavBarClasses =
-    "relative text-sm border-b pb-2 hover:text-[#58A42A] cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[2px] md:after:w-0 md:after:bg-[#58A42A] md:after:transition-all md:after:duration-300 hover:after:w-full";
+    "relative text-sm border-b pb-2 hover:text-[#58A42A] cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[2px] md:after:w-0 md:after:bg-[#58A42A] md:after:transition-all md:after:duration-300 hover:after:w-full focus:text-[#58A42A]";
   const underLineAnimate =
     "after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full";
 
