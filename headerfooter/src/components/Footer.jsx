@@ -2,7 +2,7 @@ const Footer = () => {
   const commonClasses = "hover:text-white hover:underline duration-300";
   return (
     <>
-      <footer className="bg-black text-white py-8 underline-offset-8 mt-40 w-full">
+      <footer className="bg-black text-white py-8 underline-offset-8 w-full">
         <div className="container mx-auto md:px-[12%]">
           <div className="flex flex-col md:flex-row justify-center md:ms-36">
             <ul className="flex flex-col gap-8 px-5 md:flex md:flex-row md:gap-10 md:text-sm">
