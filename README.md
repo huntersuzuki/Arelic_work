@@ -1,4 +1,4 @@
-# Deplyed URLs
+# Deployed URLs
 
 ## https://arelic-work.vercel.app 
 
