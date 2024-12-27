@@ -1,13 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CiUser } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaSquarePhone } from "react-icons/fa6";
+
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [open]);
+
   const commonNavBarClasses =
     "relative text-sm border-b pb-2 hover:text-[#58A42A] cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[2px] md:after:w-0 md:after:bg-[#58A42A] md:after:transition-all md:after:duration-300 hover:after:w-full focus:text-[#58A42A]";
-  const underLineAnimate =
-    "after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full";
 
   const handleToggleClick = (event) => {
     event.stopPropagation();
@@ -25,11 +36,9 @@ const Header = () => {
             <p className={`text-center `}>OUR PHONE NUMBER: +91 90281 44481</p>
           </div>
           <div className="hidden md:flex justify-end space-x-5 col-span-2 md:me-10 mt-1.5">
-            <p className={`cursor-pointer ${underLineAnimate}`}>
-              <i className="fa-solid fa-user"></i> MY ACCOUNT
-            </p>
-            <p className={`cursor-pointer ${underLineAnimate}`}>CART</p>
-            <p className={`cursor-pointer ${underLineAnimate}`}>CONTACT US</p>
+            <p className={`cursor-pointer`}>MY ACCOUNT</p>
+            <p className={`cursor-pointer`}>CART</p>
+            <p className={`cursor-pointer`}>CONTACT US</p>
           </div>
         </div>
       </div>
@@ -69,7 +78,7 @@ const Header = () => {
               <input
                 type="text"
                 name="search products"
-                className="w-full py-2 pl-10 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700"
+                className="w-full py-2 pl-10 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700 rounded-md"
                 placeholder="Search For Products"
               />
             </div>
@@ -87,41 +96,6 @@ const Header = () => {
                 Login / Register
               </a>
             </p>
-          </div>
-        </div>
-
-        <div className={`hidden md:grid md:grid-cols-2 md:ms-14`}>
-          <ul className="text-center md:flex md:gap-8">
-            <li className={`${commonNavBarClasses} text-[14px] mt-8`}>HOME</li>
-            <li className={`${commonNavBarClasses} text-[14px] mt-8`}>
-              ABOUT US
-            </li>
-            <li className={`${commonNavBarClasses} text-[14px] mt-8`}>SHOP</li>
-            <li className={`${commonNavBarClasses} text-[14px] mt-8`}>BLOGS</li>
-            <li className={`${commonNavBarClasses} text-[14px] mt-8`}>
-              CONTACT US
-            </li>
-            {/*<li className={`text-[13px]`}>*/}
-            {/*  <a href="#" className="italic font-thin">*/}
-            {/*    Login / Register*/}
-            {/*  </a>*/}
-            {/*</li>*/}
-            <li className={`relative left-52`}>
-              <img
-                src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
-                alt="logo"
-                className="w-24"
-              />
-            </li>
-          </ul>
-
-          <div className="hidden md:flex justify-end space-x-6 px-16 mt-8">
-            <a href="#" className="italic font-thin me-16 text-[13px]">
-              Login / Register
-            </a>
-            <i className="fa-solid fa-magnifying-glass text-lg"></i>
-            <i className="fa-regular fa-heart text-lg"></i>
-            <i className="fa-solid fa-cart-shopping text-lg"></i>
           </div>
         </div>
       </div>
