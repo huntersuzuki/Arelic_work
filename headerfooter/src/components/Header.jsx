@@ -64,12 +64,15 @@ const Header = () => {
             onClick={() => setOpen(false)}
           ></i>
           <div className="flex flex-col gap-4 w-full mt-7">
-            <input
-              type="text"
-              name="search products"
-              className="w-full py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700 px-2"
-              placeholder="Search For Products"
-            />
+            <div className="relative w-full">
+              <i className="fa-solid fa-magnifying-glass absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+              <input
+                type="text"
+                name="search products"
+                className="w-full py-2 pl-10 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700"
+                placeholder="Search For Products"
+              />
+            </div>
             <p className={`${commonNavBarClasses} w-full text-left`}>HOME</p>
             <p className={`${commonNavBarClasses} w-full text-left`}>
               ABOUT US
@@ -80,7 +83,7 @@ const Header = () => {
               CONTACT US
             </p>
             <p className={`w-full border-b pb-2 text-left`}>
-              <a href="#" className="italic font-thin text-lg">
+              <a href="#" className="md:italic md:font-thin text-lg">
                 Login / Register
               </a>
             </p>
