@@ -66,7 +66,7 @@ const Header = () => {
           <div className={`flex flex-col gap-5 ms-[48%] relative -top-24`}>
             <input
               type="text"
-              name="search"
+              name="search products"
               className="w-[92%] py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700 "
               placeholder="Search For Products"
             />
