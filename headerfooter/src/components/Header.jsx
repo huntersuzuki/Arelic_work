@@ -55,28 +55,32 @@ const Header = () => {
         </div>
         <div
           className={`${
-            open ? "-translate-x-[32%]" : "-translate-x-full"
-          } absolute top-0 left-0 w-full h-full bg-[#0C0C0C] text-white z-50 flex flex-col items-center justify-center gap-6 transition-transform duration-500 ease-in-out`}
+            open ? "translate-x-0" : "-translate-x-full"
+          } fixed top-0 left-0 w-[70%] h-full bg-[#0C0C0C] text-white z-50 flex flex-col items-start px-4 py-6 gap-6 transition-transform duration-500 ease-in-out`}
           onClick={(e) => e.stopPropagation()}
         >
           <i
             className="fa-solid fa-xmark text-2xl absolute top-5 right-5 cursor-pointer"
             onClick={() => setOpen(false)}
           ></i>
-          <div className={`flex flex-col gap-5 ms-[20%] relative -top-24`}>
+          <div className="flex flex-col gap-4 w-full mt-7">
             <input
               type="text"
               name="search products"
-              className="w-full py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700"
+              className="w-full py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700 px-2"
               placeholder="Search For Products"
             />
-            <p className={`${commonNavBarClasses}`}>HOME</p>
-            <p className={`${commonNavBarClasses}`}>ABOUT US</p>
-            <p className={`${commonNavBarClasses} `}>SHOP</p>
-            <p className={`${commonNavBarClasses} `}>BLOGS</p>
-            <p className={`${commonNavBarClasses} `}>CONTACT US</p>
-            <p className={`w-full border-b pb-2`}>
-              <a href="#" className="italic font-thin text-lg pb-2">
+            <p className={`${commonNavBarClasses} w-full text-left`}>HOME</p>
+            <p className={`${commonNavBarClasses} w-full text-left`}>
+              ABOUT US
+            </p>
+            <p className={`${commonNavBarClasses} w-full text-left`}>SHOP</p>
+            <p className={`${commonNavBarClasses} w-full text-left`}>BLOGS</p>
+            <p className={`${commonNavBarClasses} w-full text-left`}>
+              CONTACT US
+            </p>
+            <p className={`w-full border-b pb-2 text-left`}>
+              <a href="#" className="italic font-thin text-lg">
                 Login / Register
               </a>
             </p>
