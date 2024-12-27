@@ -48,26 +48,26 @@ const Header = () => {
               className="w-16 md:hidden"
             />
           </div>
-          <div className={`flex gap-5 ms-8 text-3xl md:hidden `}>
+          <div className={`flex gap-5 ms-8 text-3xl md:hidden`}>
             <CiUser />
             <CiShoppingCart />
           </div>
         </div>
         <div
           className={`${
-            open ? "-translate-x-[45%]" : "-translate-x-full"
-          } absolute top-0 left-0 w-full h-screen bg-black text-white z-50 flex flex-col items-center justify-center gap-6 transition-transform duration-500 ease-in-out`}
+            open ? "-translate-x-[32%]" : "-translate-x-full"
+          } absolute top-0 left-0 w-full h-full bg-[#0C0C0C] text-white z-50 flex flex-col items-center justify-center gap-6 transition-transform duration-500 ease-in-out`}
           onClick={(e) => e.stopPropagation()}
         >
           <i
             className="fa-solid fa-xmark text-2xl absolute top-5 right-5 cursor-pointer"
             onClick={() => setOpen(false)}
           ></i>
-          <div className={`flex flex-col gap-5 ms-[48%] relative -top-24`}>
+          <div className={`flex flex-col gap-5 ms-[20%] relative -top-24`}>
             <input
               type="text"
               name="search products"
-              className="w-[92%] py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700 "
+              className="w-full py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#58A42A] text-gray-700"
               placeholder="Search For Products"
             />
             <p className={`${commonNavBarClasses}`}>HOME</p>
