@@ -99,6 +99,35 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className={`hidden md:grid md:grid-cols-2 md:ms-14`}>
+        <ul className="text-center md:flex md:gap-8">
+          <li className={`${commonNavBarClasses} text-[14px] mt-8`}>HOME</li>
+          <li className={`${commonNavBarClasses} text-[14px] mt-8`}>
+            ABOUT US
+          </li>
+          <li className={`${commonNavBarClasses} text-[14px] mt-8`}>SHOP</li>
+          <li className={`${commonNavBarClasses} text-[14px] mt-8`}>BLOGS</li>
+          <li className={`${commonNavBarClasses} text-[14px] mt-8`}>
+            CONTACT US
+          </li>
+          <li className={`relative left-52`}>
+            <img
+              src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
+              alt="logo"
+              className="w-24"
+            />
+          </li>
+        </ul>
+
+        <div className="hidden md:flex justify-end space-x-6 px-16 mt-8">
+          <a href="#" className="italic font-thin me-16 text-[13px]">
+            Login / Register
+          </a>
+          <i className="fa-solid fa-magnifying-glass text-lg"></i>
+          <i className="fa-regular fa-heart text-lg"></i>
+          <i className="fa-solid fa-cart-shopping text-lg"></i>
+        </div>
+      </div>
     </>
   );
 };
