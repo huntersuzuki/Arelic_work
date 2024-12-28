@@ -2,12 +2,14 @@ const Footer = () => {
   const commonClasses = "hover:text-white hover:underline duration-300";
   return (
     <>
-      <footer className="bg-black text-white py-8 underline-offset-8 w-full">
+      <footer className="bg-black text-white mt-5 py-8 underline-offset-8 w-full">
         <div className="container mx-auto md:px-[12%]">
           <div className="flex flex-col md:flex-row justify-center md:ms-36">
             <ul className="flex flex-col gap-8 px-5 md:flex md:flex-row md:gap-10 md:text-sm">
               <li className={`md:w-[30%]`}>
-                <p className={`underline font-bold`}>ABOUT THE STORE</p>
+                <p className="relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 ">
+                  ABOUT THE STORE
+                </p>
                 <div className={`mt-5 text-[#4c4c4c] flex flex-col gap-5`}>
                   <p>
                     Orovita offers premium, eco-friendly oils with a focus on
@@ -26,7 +28,11 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <p className={`underline font-bold`}>FEATURED PRODUCTS</p>
+                <p
+                  className={` relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300`}
+                >
+                  FEATURED PRODUCTS
+                </p>
                 <div className={`mt-5`}>
                   <ul className={`flex flex-col gap-2 text-[#4c4c4c]`}>
                     <li className={commonClasses}>
@@ -42,7 +48,11 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <p className={`underline font-bold`}>USEFUL LINKS</p>
+                <p
+                  className={` relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 `}
+                >
+                  USEFUL LINKS
+                </p>
                 <div className={`mt-5`}>
                   <ul className={`flex flex-col gap-2 text-[#4c4c4c]`}>
                     <li className={commonClasses}>
@@ -70,7 +80,11 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <p className={`underline font-bold`}>SUBSCRIBE NOW</p>
+                <p
+                  className={`relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 `}
+                >
+                  SUBSCRIBE NOW
+                </p>
                 <div className={`mt-8 flex flex-col gap-5 outline-0`}>
                   <input
                     type="email"
