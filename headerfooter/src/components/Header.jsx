@@ -20,6 +20,9 @@ const Header = () => {
   const commonNavBarClasses =
     "relative text-sm border-b pb-2 hover:text-[#58A42A] cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[2px] md:after:w-0 md:after:bg-[#58A42A] md:after:transition-all md:after:duration-300 hover:after:w-full focus:text-[#58A42A]";
 
+    const animateTopNavElements =
+      "cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[2px] md:after:w-0 md:after:bg-white md:after:transition-all md:after:duration-300 hover:after:w-full";
+
   const handleToggleClick = (event) => {
     event.stopPropagation();
     setOpen(!open);
@@ -29,20 +32,20 @@ const Header = () => {
     <>
       <div className="w-full bg-[#58A42A] h-12">
         <div className="grid grid-cols-1 md:grid-cols-3 items-center text-white text-xs py-2 px-4">
-          <div className="flex items-cente gap-2 justify-center md:ms-10 mt-1.5">
+          <div className="flex ms-12 gap-2 md:ms-5 mt-1.5">
             <div className={`mt-0.5`}>
               <FaSquarePhone />
             </div>
-            <p className={`text-center `}>OUR PHONE NUMBER: +91 90281 44481</p>
+            <p className={`text-center`}>OUR PHONE NUMBER: +91 90281 44481</p>
           </div>
           <div className="hidden md:flex justify-end space-x-5 col-span-2 md:me-10 mt-1.5">
-            <p className={`cursor-pointer`}>MY ACCOUNT</p>
-            <p className={`cursor-pointer`}>CART</p>
-            <p className={`cursor-pointer`}>CONTACT US</p>
+            <p className={`${animateTopNavElements}`}>MY ACCOUNT</p>
+            <p className={`${animateTopNavElements}`}>CART</p>
+            <p className={`${animateTopNavElements}`}>CONTACT US</p>
           </div>
         </div>
       </div>
-      <div className="px-4 py-4">
+      <div className="px-4 py-1">
         <div className="grid grid-cols-3 items-center">
           <div className="md:hidden">
             <i
@@ -50,14 +53,14 @@ const Header = () => {
               onClick={handleToggleClick}
             ></i>
           </div>
-          <div className={`ms-[16%]`}>
+          <div className={`ms-7`}>
             <img
               src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
               alt="logo"
-              className="w-16 md:hidden"
+              className="w-12 md:hidden"
             />
           </div>
-          <div className={`flex gap-5 ms-8 text-3xl md:hidden`}>
+          <div className={`flex gap-5 ms-8 text-2xl md:hidden`}>
             <CiUser />
             <CiShoppingCart />
           </div>
@@ -120,7 +123,10 @@ const Header = () => {
         </ul>
 
         <div className="hidden md:flex justify-end space-x-6 px-16 mt-8">
-          <a href="#" className="italic font-thin me-16 text-[13px]">
+          <a
+            href="#"
+            className="italic font-thin me-16 text-[13px] cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[0.5px] md:after:w-0 md:after:bg-black md:after:transition-all md:after:duration-300 hover:after:w-full"
+          >
             Login / Register
           </a>
           <i className="fa-solid fa-magnifying-glass text-lg"></i>
