@@ -113,7 +113,7 @@ const Header = () => {
           <li className={`${commonNavBarClasses} text-[14px] mt-8`}>
             CONTACT US
           </li>
-          <li className={`relative left-52`}>
+          <li className={`ms-[30%]`}>
             <img
               src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
               alt="logo"
