@@ -53,14 +53,14 @@ const Header = () => {
               onClick={handleToggleClick}
             ></i>
           </div>
-          <div className={`ms-7`}>
+          <div className={`ms-8`}>
             <img
               src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
               alt="logo"
               className="w-12 md:hidden"
             />
           </div>
-          <div className={`flex gap-5 ms-8 text-2xl md:hidden`}>
+          <div className={`flex gap-5 ms-12 text-2xl md:hidden`}>
             <CiUser />
             <CiShoppingCart />
           </div>
