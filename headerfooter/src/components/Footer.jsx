@@ -3,11 +3,11 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-black text-white mt-5 py-8 underline-offset-8 w-full">
-        <div className="container mx-auto md:px-[12%]">
-          <div className="flex flex-col md:flex-row justify-center md:ms-36">
+        <div className="container mx-auto md:px-[8%]">
+          <div className="flex flex-col md:flex-row justify-center md:w-full md:ms-36">
             <ul className="flex flex-col gap-8 px-5 md:flex md:flex-row md:gap-10 md:text-sm">
               <li className={`md:w-[30%]`}>
-                <p className="relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 ">
+                <p className="relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 text-[16px] ">
                   ABOUT THE STORE
                 </p>
                 <div className={`mt-5 text-[#4c4c4c] flex flex-col gap-5`}>
@@ -29,7 +29,7 @@ const Footer = () => {
               </li>
               <li>
                 <p
-                  className={` relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300`}
+                  className={` relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 text-[16px]`}
                 >
                   FEATURED PRODUCTS
                 </p>
@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
               <li>
                 <p
-                  className={` relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 `}
+                  className={` relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 text-[16px]`}
                 >
                   USEFUL LINKS
                 </p>
@@ -81,7 +81,7 @@ const Footer = () => {
               </li>
               <li>
                 <p
-                  className={`relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 `}
+                  className={`relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 text-[16px]`}
                 >
                   SUBSCRIBE NOW
                 </p>
