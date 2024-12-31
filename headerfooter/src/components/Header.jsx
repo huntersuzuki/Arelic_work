@@ -68,7 +68,7 @@ const Header = () => {
         <div
           className={`${
             open ? "translate-x-0" : "-translate-x-full"
-          } fixed top-0 left-0 w-[70%] h-full bg-[#0C0C0C] text-white z-50 flex flex-col items-start px-4 py-6 gap-6 transition-transform duration-500 ease-in-out`}
+          } fixed top-12 left-0 w-[70%] h-full bg-[#0C0C0C] text-white z-50 flex flex-col items-start px-4 py-6 gap-6 transition-transform duration-500 ease-in-out`}
           onClick={(e) => e.stopPropagation()}
         >
           <i
