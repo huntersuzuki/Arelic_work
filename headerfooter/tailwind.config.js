@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        parallax:
+          'url("https://dhatuorganics.com/wp-content/uploads/2022/12/Flaxseeds-12.png")',
+      },
+    },
   },
   plugins: [],
 };
