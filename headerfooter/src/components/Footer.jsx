@@ -3,9 +3,9 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-black text-white mt-5 py-8 underline-offset-8 w-full">
-        <div className="container mx-auto md:px-[8%]">
-          <div className="flex flex-col md:flex-row justify-center md:w-full md:ms-36">
-            <ul className="flex flex-col gap-8 px-5 md:flex md:flex-row md:gap-10 md:text-sm">
+        <div className="grid grid-cols-1">
+          <div className="">
+            <ul className="flex flex-col gap-8 px-5 md:flex md:flex-row justify-center md:gap-10 md:text-sm">
               <li className={`md:w-[30%]`}>
                 <p className="relative font-bold after:block after:w-[25px] after:h-[2px] after:bg-white after:mt-1 after:duration-300 text-[16px] ">
                   ABOUT THE STORE
@@ -104,7 +104,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-black my-6"></div>
-          <hr></hr>
+          <hr className={`h-[0.5px]`}></hr>
 
           <div className="flex flex-col md:flex-row justify-center items-center text-gray-400 text-sm">
             <p className={`text-center mt-5`}>
