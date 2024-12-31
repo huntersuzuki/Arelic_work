@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const DeskTopMainNavBar = ({ commonNavBarClasses }) => {
   return (
     <>
-      <section className="">
+      <section className="md:mb-1 z-50">
         <div className="max-w-full lg:px-8 md:grid grid-cols-3">
           <ul className="text-center md:flex md:gap-8">
             <li className={`${commonNavBarClasses} text-[14px] mt-8`}>HOME</li>
@@ -37,6 +37,7 @@ const DeskTopMainNavBar = ({ commonNavBarClasses }) => {
           {/*<Breadcrumbs items={breadcrumbItems}/>*/}
         </div>
       </section>
+      <hr className="w-[100%] h-[1px] mx-auto bg-opacity-10 bg-black border-0 rounded" />
     </>
   );
 };
