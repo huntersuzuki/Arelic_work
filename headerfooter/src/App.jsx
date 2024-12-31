@@ -5,6 +5,7 @@ import MainImageSlider from "./components/sliders/MainImageSlider.jsx";
 import FeaturedCategories from "./components/featured_categories/FeaturedCategories.jsx";
 import { useEffect, useState } from "react";
 import FeaturedProducts from "./components/featured_products/FeaturedProducts.jsx";
+import SubscribeForUpdates from "./components/subscribe_for_updates/SubscribeForUpdates.jsx";
 
 function App() {
   const [imageData, setImageData] = useState([]);
@@ -19,6 +20,7 @@ function App() {
       <MainImageSlider data={imageData} />
       <FeaturedCategories />
       <FeaturedProducts />
+      <SubscribeForUpdates />
       <Footer />
     </>
   );
