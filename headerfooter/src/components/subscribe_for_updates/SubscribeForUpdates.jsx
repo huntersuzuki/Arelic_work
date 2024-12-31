@@ -16,7 +16,7 @@ const SubscribeForUpdates = () => {
               type="text"
               name="subscribe"
               placeholder={"Your Email Address"}
-              className={`md:w-[50%] h-[8vh] outline-0 border-b bg-transparent`}
+              className={`md:w-[50%] h-[7vh] outline-0 border-b bg-transparent`}
             />
             <input
               type="button"
