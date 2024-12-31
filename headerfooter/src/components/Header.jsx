@@ -53,7 +53,7 @@ const Header = () => {
               onClick={handleToggleClick}
             ></i>
           </div>
-          <div className={`ms-8`}>
+          <div className={`ms-7`}>
             <img
               src="https://orovita.in/cdn/shop/files/orovita-logo-final_402x.png?v=1734232432"
               alt="logo"
