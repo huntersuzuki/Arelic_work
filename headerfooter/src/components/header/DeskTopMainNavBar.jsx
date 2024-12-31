@@ -26,7 +26,7 @@ const DeskTopMainNavBar = ({ commonNavBarClasses }) => {
           <div className="hidden md:flex justify-end space-x-6 px-16 mt-8">
             <a
               href="#"
-              className=" w-full italic font-light me-16 text-[14px] cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[0.5px] md:after:w-0 md:after:bg-black md:after:transition-all md:after:duration-300 hover:after:w-full"
+              className="italic font-light me-16 text-[14px] cursor-pointer duration-300 md:after:content-[''] md:after:block md:after:h-[0.5px] md:after:w-0 md:after:bg-black md:after:transition-all md:after:duration-300 hover:after:w-full"
             >
               Login / Register
             </a>
