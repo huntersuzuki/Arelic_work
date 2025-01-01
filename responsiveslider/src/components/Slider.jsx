@@ -28,6 +28,8 @@ const Slider = () => {
         const swiperInstance = swiperRef.current.swiper;
         if (window.innerWidth < 640) {
           swiperInstance.slideTo(4);
+        } else if (window.innerWidth < 768) {
+          swiperInstance.slideTo(5);
         } else if (window.innerWidth < 1024) {
           swiperInstance.slideTo(1);
         } else {
