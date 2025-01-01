@@ -10,13 +10,16 @@ const Slider = () => {
 
     useEffect(() => {
         fetch("/imageData.json")
-            .then((response) => {
-                if (!response.ok) throw new Error("Failed to load image data")
-                {
-                return response.json();
+            .then((response) => response.json())
+            .then((data) => {
+
+                if (data.length < 3) {
+                    const duplicates = [...data, ...data]; // Adjust as needed
+                    setImageData(duplicates);
+                } else {
+                    setImageData(data);
                 }
             })
-            .then((data) => setImageData(data))
             .catch((error) => console.error("Error fetching image data:", error));
     }, []);
 
