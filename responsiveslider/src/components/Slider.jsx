@@ -10,9 +10,16 @@ const Slider = () => {
 
     useEffect(() => {
         fetch("/imageData.json")
-            .then((response) => response.json())
-            .then((data) => setImageData(data));
+            .then((response) => {
+                if (!response.ok) throw new Error("Failed to load image data")
+                {
+                return response.json();
+                }
+            })
+            .then((data) => setImageData(data))
+            .catch((error) => console.error("Error fetching image data:", error));
     }, []);
+
 
     return (
         <div className="relative w-full h-full">
@@ -39,22 +46,8 @@ const Slider = () => {
                     nextEl: '.custom-next',
                     prevEl: '.custom-prev',
                 }}
-                loop={true}
+                loop={imageData.length>1}
                 pagination={{ clickable: true }}
-                breakpoints={{
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 1,
-                        spaceBetween: 40,
-                    },
-                    1024: {
-                        slidesPerView: 1,
-                        spaceBetween: 50,
-                    },
-                }}
                 className="lg:h-[100vh] md:h-[75vh] sm:h-[50vh] h-[55vh] duration-300"
             >
                 {imageData.map((item) => (
