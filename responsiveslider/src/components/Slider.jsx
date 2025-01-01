@@ -31,7 +31,7 @@ const Slider = () => {
         } else if (window.innerWidth < 1024) {
           swiperInstance.slideTo(1);
         } else {
-          swiperInstance.slideTo(2);
+          swiperInstance.slideTo(3);
         }
       }
     };
