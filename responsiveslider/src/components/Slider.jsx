@@ -7,6 +7,7 @@ import "swiper/css/effect-fade";
 
 const Slider = () => {
   const [imageData, setImageData] = useState([]);
+  const [screenSize, setScreenSize] = useState("");
   const swiperRef = useRef(null);
   useEffect(() => {
     fetch("/imageData.json")
@@ -24,6 +25,14 @@ const Slider = () => {
 
   useEffect(() => {
     const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setScreenSize("mobile");
+      } else if (window.innerWidth < 769) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("laptop/pc");
+      }
+
       if (swiperRef.current) {
         const swiperInstance = swiperRef.current.swiper;
         if (window.innerWidth < 640) {
@@ -84,6 +93,9 @@ const Slider = () => {
                 alt={item.title}
                 className="w-full h-full object-cover"
               />
+            </div>
+            <div className="absolute top-4 left-4 text-white text-5xl font-extrabold">
+              {screenSize}
             </div>
           </SwiperSlide>
         ))}
