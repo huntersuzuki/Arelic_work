@@ -13,7 +13,7 @@ const Slider = () => {
             .then((response) => response.json())
             .then((data) => {
 
-                if (data.length < 3) {
+                if (data.length <3) {
                     const duplicates = [...data, ...data]; // Adjust as needed
                     setImageData(duplicates);
                 } else {
