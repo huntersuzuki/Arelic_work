@@ -14,7 +14,7 @@ const Slider = () => {
             .then((data) => {
 
                 if (data.length <3) {
-                    const duplicates = [...data, ...data]; // Adjust as needed
+                    const duplicates = [...data, ...data];
                     setImageData(duplicates);
                 } else {
                     setImageData(data);
