@@ -19,7 +19,7 @@ const SubscribeForUpdates = () => {
               className={`md:w-[50%] h-[7vh] outline-0 border-b bg-transparent`}
             />
             <input
-              type="button"
+              type="submit"
               value="SIGN UP"
               className={`mx-auto md:mx-0 w-[45vw] h-[5vh] md:w-[15vw] bg-white`}
             />
