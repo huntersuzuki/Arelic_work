@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa";
 import { Container, Radio, Rating } from "./RatingStyles";
 
 const ReviewRating = () => {
-  const [rate, setRate] = useState(0);
+  const [rate, setRate] = useState(4);
 
   return (
     <Container>
