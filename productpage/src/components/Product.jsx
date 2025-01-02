@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ImageDisplay from "./ImageDisplay.jsx";
 import ProductDescription from "./ProductDescription.jsx";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 const Product = () => {
   const [imageData, setImageData] = useState([]);
@@ -32,11 +34,13 @@ const Product = () => {
           {imageData.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="flex justify-center">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="object-contain w-full h-full"
-                />
+                <Zoom>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="object-contain w-full h-full"
+                  />
+                </Zoom>
               </div>
             </SwiperSlide>
           ))}
