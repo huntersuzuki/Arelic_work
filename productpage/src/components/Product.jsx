@@ -51,7 +51,7 @@ const Product = () => {
         <ProductDescription />
       </div>
 
-      <div className="mt-6 sm:col-span-2 hidden md:flex md:ms-40">
+      <div className="sm:col-span-3 hidden md:flex md:mx-14">
         <ImageDisplay data={imageData} slide={slideTo} />
       </div>
     </div>
