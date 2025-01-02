@@ -4,7 +4,7 @@ import Product from "./components/Product.jsx";
 function App() {
   return (
     <>
-      <div className={`mt-10`}>
+      <div className={`mt-5 md:mt-10 `}>
         <Product />
       </div>
     </>
