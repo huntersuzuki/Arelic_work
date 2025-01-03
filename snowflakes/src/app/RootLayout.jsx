@@ -20,6 +20,10 @@ export default function RootLayout({ children }) {
 
     return (
         <html lang="en">
+        <head>
+            <script src={`/public/snow.js`}></script>
+            <title>Snowflakes</title>
+        </head>
         <body>
         {/* Snowfall Effect (Background animation) */}
         <SnowfallEffect />
