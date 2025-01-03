@@ -1,7 +1,7 @@
 import ReviewRating from "./ReviewRating.jsx";
 import QuantityPicker from "./QuantityPicker.jsx";
-
-const ProductDescription = ({ productPrice }) => {
+import productPrice from "/public/productPrice.json";
+const ProductDescription = () => {
   return (
     <div className="flex flex-col gap-4 px-4 sm:px-6 md:px-8 lg:px-10">
       <h1 className="underline hover:no-underline cursor-pointer text-sm sm:text-md lg:text-lg font-bold">
@@ -19,10 +19,13 @@ const ProductDescription = ({ productPrice }) => {
       <div>
         <ReviewRating />
       </div>
-
-      <p className="text-lg sm:text-xl lg:text-2xl font-bold">
-        {productPrice === null ? "Loading..." : `₹ ${productPrice}`}
-      </p>
+      {productPrice.map((item, index) => {
+        return (
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold" key={index}>
+            ₹ {item.price}
+          </p>
+        );
+      })}
 
       <div>
         <QuantityPicker />
