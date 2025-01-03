@@ -1,3 +1,4 @@
+"use client";
 import ReviewRating from "./ReviewRating.jsx";
 import QuantityPicker from "./QuantityPicker.jsx";
 import productPrice from "/public/productPrice.json";
